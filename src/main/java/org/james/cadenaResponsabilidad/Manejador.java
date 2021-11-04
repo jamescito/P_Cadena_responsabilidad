@@ -1,4 +1,4 @@
-package org.james;
+package org.james.cadenaResponsabilidad;
 
 public abstract class Manejador {
     private Manejador sucesor;

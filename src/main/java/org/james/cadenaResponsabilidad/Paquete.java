@@ -1,4 +1,4 @@
-package org.james;
+package org.james.cadenaResponsabilidad;
 
 public class Paquete {
     private String contenido;
@@ -13,7 +13,7 @@ public class Paquete {
 
     ///// COMPLETAR ////
     public String toString() {
-    return "### Paquete # Contenido: " + contenido + " # Destino: " + destino + " # Peso: " + peso;
+        return "### Paquete # Contenido: " + contenido + " # Destino: " + destino + " # Peso: " + peso;
     }
 
     public Object getDestino() {
