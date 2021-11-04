@@ -1,5 +1,10 @@
 package org.james.comportamiento_Comando;
 
-public class Comando {
-    
+//Interfaz comando. Modela el comportamiento genérico de los comandos
+public interface Comando {
+    void setReunion(Reunion reunion);
+
+    Reunion getReunion();
+
+    void ejecutar(String param);
 }
