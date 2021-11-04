@@ -13,7 +13,14 @@ public class Paquete {
 
     ///// COMPLETAR ////
     public String toString() {
-    return "### Paquete # Contenido: " + contenido + " # Destino: " + destino + " #
-    Peso: " + peso;
+    return "### Paquete # Contenido: " + contenido + " # Destino: " + destino + " # Peso: " + peso;
+    }
+
+    public Object getDestino() {
+        return destino;
+    }
+
+    public double getPeso() {
+        return peso;
     }
 }
