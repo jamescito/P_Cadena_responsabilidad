@@ -20,10 +20,12 @@ public class Reunion {
 
     public void setMotivo(String nuevo) {
         //// COMPLETAR /////////
+        this.motivo=nuevo;
     }
 
     public String getParticipantes() {
-        //// COMPLETAR /////////
+        return participantes;
+        
     }
 
     public void setParticipantes(String nuevos) {

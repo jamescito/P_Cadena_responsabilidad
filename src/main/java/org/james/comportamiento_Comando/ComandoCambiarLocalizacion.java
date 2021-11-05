@@ -8,17 +8,23 @@ public class ComandoCambiarLocalizacion implements ComandoDeshacer {
     private String antiguaLocalizacion; // guardará la antigua localización
 
     public Reunion getReunion() {
+        return reunion;
         //// COMPLETAR /////////
     }
 
     public void setReunion(Reunion reunion) {
         //// COMPLETAR /////////
+        this.reunion=reunion;
     }
 
     // Cambia el lugar de la reunión por otro introducido por el usuario y
     // almacena el valor anterior de la reunion por si luego se quiere recuperar
     public void ejecutar(String param) {
         //// COMPLETAR /////////
+        antiguaLocalizacion= reunion.getLocalizacion();
+        nuevaLocalizacion = new String(param);
+        reunion.setLocalizacion(nuevaLocalizacion);
+        
     }
 
     // Recupera el valor de la Reunión anterior al introducido por el usuario

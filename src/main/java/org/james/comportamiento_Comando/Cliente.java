@@ -4,6 +4,7 @@ package org.james.comportamiento_Comando;
 public class Cliente {
     public static void main(String args[]) {
         try {
+
             // fecha de la reunión
             FechaHora fh = new FechaHora(1, 6, 2010, 10, 30);
             // la reunión
@@ -22,19 +23,26 @@ public class Cliente {
             System.out.println("\n- Deshacer:" + r.toString());
             inv.rehacerComando();
             System.out.println("\n- Rehacer:" + r.toString());
+
+            
             // comando fecha
+            
             comando = new ComandoCambiarFecha();
             comando.setReunion(r);
-            // establece y ejecuta el comando
+            System.out.println("Luego de los comandos");
             inv.setComando(comando);
-            inv.ejecutaComando("5/6/2010/12:30");
+            inv.ejecutaComando("02/11/2011/11:23");
+
             System.out.println("\n- Después de ejecutar el comando fecha:" + r.toString());
             inv.deshacerComando();
             System.out.println("\n- Deshacer:" + r.toString());
             inv.rehacerComando();
             System.out.println("\n- Rehacer:" + r.toString());
+
         } catch (Exception e) {
-            System.out.println(e.toString());
+            if(e.toString() == null){
+                System.out.println(e.toString());
+            }
         }
     }
 }

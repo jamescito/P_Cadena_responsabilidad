@@ -14,14 +14,37 @@ class FechaHora {
     // constructores
     public FechaHora(int dia, int mes, int año, int hora, int min) {
         //// COMPLETAR /////////
+        this.dia = dia;
+        this.mes = mes;
+        this.año = año;
+        this.hora = hora;
+        this.min = min;
     }
 
     public FechaHora(String cadenaFecha) {
         //// COMPLETAR /////////
+        StringTokenizer st = new StringTokenizer(cadenaFecha, "/");
+        String dd = st.nextToken();
+        String mm = st.nextToken();
+        String aa = st.nextToken();
+        String hor = st.nextToken();
+        String m = st.nextToken();
+        this.dia = Integer.parseInt(dd);
+        this.mes = Integer.parseInt(mm);
+        this.año = Integer.parseInt(aa);
+        this.año = Integer.parseInt(hor);
+        this.año = Integer.parseInt(m);
     }
 
     public FechaHora() {
         //// COMPLETAR /////////
+        
+        Calendar hoy = Calendar.getInstance();
+        dia = hoy.get(Calendar.DAY_OF_MONTH);
+        mes = hoy.get(Calendar.MONTH) + 1;
+        año = hoy.get(Calendar.YEAR);
+        hora = hoy.get(Calendar.HOUR_OF_DAY);
+        min = hoy.get(Calendar.MINUTE);
     }
 
     // métodos
