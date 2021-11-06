@@ -1,1 +1,6 @@
-# P_Cadena_responsabilidad
+# Patron Cadena responsabilidad
+
+[Documentacion](Cadena_Responsabilidad.md)
+
+# Patron Comportamiento comando
+[Documentacion](comportamiento_Comando.md)
